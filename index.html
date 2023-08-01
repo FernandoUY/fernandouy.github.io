@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Fernando Gimeno</title>
+  </head>
+
+  <body>
+    <!-- Cabecera -->
+    <header>
+      <!-- Menu -->
+      <nav class="menu">
+        <ul>
+          <li><a href="#experiencia">Experiencia Profesional</a></li>
+          <li>
+            <a href="#habilidades-y-conocimientos"
+              >Habilidades y Conocimientos</a
+            >
+          </li>
+          <li><a href="#educacion">Educación</a></li>
+          <li><a href="#perfiles">Perfiles</a></li>
+          <li><a href="#contactar">Contactar</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+      <img id="perfil" src="assets/png/perfil.jpg" alt="Profile image" />
+      <!-- Sección obre mi -->
+      <section id="sobre-mi">
+        <h1>Fernando Gimeno</h1>
+        <p>
+          Me apasiona el área de TI, especialmente el desarrollo web Front-End,
+          donde he adquirido conocimientos informales y he realizado proyectos
+          personales y colaborativos con diferentes tecnologías. Me gusta crear
+          soluciones innovadoras y atractivas para la web, escribiendo código
+          limpio, ordenado y eficiente, siguiendo buenas prácticas. Me gusta
+          mejorar continuamente mis habilidades y aprender nuevas herramientas.
+        </p>
+      </section>
+      <!-- Sección experiencia -->
+      <section id="experiencia">
+        <h2>Experiencia Profesional</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Empresa / Organización</th>
+              <th>Cargo</th>
+              <th>Localización</th>
+              <th>Desde - Hasta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>FNC S.A.</td>
+              <td>Operario</td>
+              <td>Lavalleja</td>
+              <td>2015 - Actualmente</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- Sección habilidades y conocimiento -->
+      <section id="habilidades-y-conocimientos">
+        <h2>Habilidades y Conocimientos</h2>
+        <h3>Desarrollo Web</h3>
+        <div class="group-chips">
+          <a href="https://html.spec.whatwg.org/multipage/" target="_blank">
+            <div class="chip">
+              <img src="assets/png/html.png" alt="HTML icon" />HTML 5
+            </div>
+          </a>
+          <a href="https://www.w3.org/Style/CSS/" target="_blank">
+            <div class="chip">
+              <img src="assets/png/css.png" alt="CSS icon" />CSS 3
+            </div>
+          </a>
+          <a href="https://nodejs.org/en" target="_blank">
+            <div class="chip">
+              <img src="assets/png/node.png" alt="Node.js icon" />Node.js
+            </div>
+          </a>
+          <a href="https://angular.io/" target="_blank">
+            <div class="chip">
+              <img src="assets/png/angular.png" alt="Angular icon" />Angular
+            </div>
+          </a>
+          <a href="https://react.dev/" target="_blank">
+            <div class="chip">
+              <img src="assets/png/react.png" alt="React icon" />React
+            </div>
+          </a>
+          <a href="https://vuejs.org/" target="_blank">
+            <div class="chip">
+              <img src="assets/png/vue.png" alt="Vue icon" />Vue
+            </div>
+          </a>
+        </div>
+        <h3>Desarrollo Movil</h3>
+        <div class="group-chips">
+          <a href="https://kotlinlang.org/" target="_blank">
+            <div class="chip">
+              <img src="assets/png/kotlin.png" alt="Kotlin icon" />Kotlin
+            </div>
+          </a>
+          <a href="https://flutter.dev/" target="_blank">
+            <div class="chip">
+              <img src="assets/png/flutter.png" alt="Flutter icon" />Flutter
+            </div>
+          </a>
+        </div>
+        <h3></h3>
+      </section>
+      <!-- Sección educación -->
+      <section id="educacion">
+        <h2>Educación</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Título</th>
+              <th>Entidad</th>
+              <th>Promoción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Desarrollo Web</td>
+              <td>Plan Ceibal (Jóvenes a Programar)</td>
+              <td>Noviembre 2023</td>
+            </tr>
+            <tr>
+              <td>Front-End Engineer Career Path</td>
+              <td>Codecademy</td>
+              <td>Mayo 2023</td>
+            </tr>
+            <tr>
+              <td>
+                Programa Especializado: Soporte de Tecnologías de la Información
+                de Google
+              </td>
+              <td>Coursera (Google)</td>
+              <td>Junio 2021</td>
+            </tr>
+            <tr>
+              <td>Analista en TI</td>
+              <td>INEFOP (Programa b_IT)</td>
+              <td>Agosto 2020</td>
+            </tr>
+            <tr>
+              <td>Programador</td>
+              <td>INEFOP (Programa b_IT)</td>
+              <td>Julio 2019</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- Sección redes sociales -->
+      <section id="perfiles">
+        <h2>Perfiles Sociales</h2>
+        <p>También puedes encontrarme en:</p>
+
+        <div class="social-icons">
+          <a href="https://www.twitter.com/" target="_blank">
+            <div class="wrapper">
+              <svg
+                id="twitter"
+                height="100%"
+                version="1.1"
+                viewBox="0 0 512 512"
+                width="100%"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:serif="http://www.serif.com/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <rect
+                  height="400"
+                  style="fill: none"
+                  width="400"
+                  x="56"
+                  y="56"
+                />
+                <path
+                  d="M161.014,464.013c193.208,0 298.885,-160.071 298.885,-298.885c0,-4.546 0,-9.072 -0.307,-13.578c20.558,-14.871 38.305,-33.282 52.408,-54.374c-19.171,8.495 -39.51,14.065 -60.334,16.527c21.924,-13.124 38.343,-33.782 46.182,-58.102c-20.619,12.235 -43.18,20.859 -66.703,25.498c-19.862,-21.121 -47.602,-33.112 -76.593,-33.112c-57.682,0 -105.145,47.464 -105.145,105.144c0,8.002 0.914,15.979 2.722,23.773c-84.418,-4.231 -163.18,-44.161 -216.494,-109.752c-27.724,47.726 -13.379,109.576 32.522,140.226c-16.715,-0.495 -33.071,-5.005 -47.677,-13.148l0,1.331c0.014,49.814 35.447,93.111 84.275,102.974c-15.464,4.217 -31.693,4.833 -47.431,1.802c13.727,42.685 53.311,72.108 98.14,72.95c-37.19,29.227 -83.157,45.103 -130.458,45.056c-8.358,-0.016 -16.708,-0.522 -25.006,-1.516c48.034,30.825 103.94,47.18 161.014,47.104"
+                />
+              </svg>
+            </div>
+          </a>
+          <a href="https://github.com/FernandoUY" target="_blank">
+            <div class="wrapper">
+              <svg
+                enable-background="new 0 0 512 512"
+                height="100%"
+                width="100%"
+                id="github"
+                version="1.1"
+                viewBox="0 0 512 512"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <g>
+                  <path
+                    clip-rule="evenodd"
+                    d="M296.133,354.174c49.885-5.891,102.942-24.029,102.942-110.192   c0-24.49-8.624-44.448-22.67-59.869c2.266-5.89,9.515-28.114-2.734-58.947c0,0-18.139-5.898-60.759,22.669   c-18.139-4.983-38.09-8.163-56.682-8.163c-19.053,0-39.011,3.18-56.697,8.163c-43.082-28.567-61.22-22.669-61.22-22.669   c-12.241,30.833-4.983,53.057-2.718,58.947c-14.061,15.42-22.677,35.379-22.677,59.869c0,86.163,53.057,104.301,102.942,110.192   c-6.344,5.452-12.241,15.873-14.507,30.387c-12.702,5.438-45.808,15.873-65.758-18.592c0,0-11.795-21.31-34.012-22.669   c0,0-22.224-0.453-1.813,13.592c0,0,14.96,6.812,24.943,32.653c0,0,13.6,43.089,76.179,29.48v38.543   c0,5.906-4.53,12.702-15.865,10.89C96.139,438.977,32.2,354.626,32.2,255.77c0-123.807,100.216-224.022,224.03-224.022   c123.347,0,224.023,100.216,223.57,224.022c0,98.856-63.946,182.754-152.828,212.688c-11.342,2.266-15.873-4.53-15.873-10.89   V395.45C311.1,374.577,304.288,360.985,296.133,354.174L296.133,354.174z M512,256.23C512,114.73,397.263,0,256.23,0   C114.73,0,0,114.73,0,256.23C0,397.263,114.73,512,256.23,512C397.263,512,512,397.263,512,256.23L512,256.23z"
+                    fill-rule="evenodd"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/fernando-gimeno/"
+            target="_blank"
+          >
+            <div class="wrapper">
+              <svg
+                enable-background="new 0 0 56.693 56.693"
+                height="100%"
+                id="linkedin"
+                version="1.1"
+                viewBox="0 0 56.693 56.693"
+                width="100%"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <g>
+                  <path
+                    d="M30.071,27.101v-0.077c-0.016,0.026-0.033,0.052-0.05,0.077H30.071z"
+                  />
+                  <path
+                    d="M49.265,4.667H7.145c-2.016,0-3.651,1.596-3.651,3.563v42.613c0,1.966,1.635,3.562,3.651,3.562h42.12   c2.019,0,3.654-1.597,3.654-3.562V8.23C52.919,6.262,51.283,4.667,49.265,4.667z M18.475,46.304h-7.465V23.845h7.465V46.304z    M14.743,20.777h-0.05c-2.504,0-4.124-1.725-4.124-3.88c0-2.203,1.67-3.88,4.223-3.88c2.554,0,4.125,1.677,4.175,3.88   C18.967,19.052,17.345,20.777,14.743,20.777z M45.394,46.304h-7.465V34.286c0-3.018-1.08-5.078-3.781-5.078   c-2.062,0-3.29,1.389-3.831,2.731c-0.197,0.479-0.245,1.149-0.245,1.821v12.543h-7.465c0,0,0.098-20.354,0-22.459h7.465v3.179   c0.992-1.53,2.766-3.709,6.729-3.709c4.911,0,8.594,3.211,8.594,10.11V46.304z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </section>
+      <!-- Pie de página -->
+      <footer id="contactar">
+        <!-- Formulario de contacto -->
+        <h2>Contactar</h2>
+        <form>
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" required />
+          <br />
+          <label for="tematica">Temática</label>
+          <select name="tematica" id="tematica">
+            <option value="" selected>-- Elige un tema --</option>
+            <option value="consulta">Consulta</option>
+            <option value="propuesta">Propuesta</option>
+            <option value="reporte">Reporte</option>
+            <option value="otro">Otro</option>
+          </select>
+          <br />
+          <label for="asunto">Asunto</label>
+          <input type="text" name="asunto" id="asunto" required />
+          <br />
+          <label for="cuerpo">Cuerpo</label>
+          <textarea name="cuerpo" id="cuerpo" rows="5" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </footer>
+    </main>
+  </body>
+</html>

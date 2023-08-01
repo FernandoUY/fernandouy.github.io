@@ -1,0 +1,330 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat";
+  margin: 0;
+  background-image: url(assets/png/background-pattern.png);
+  background-repeat: repeat;
+}
+
+main {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  margin: auto;
+  width: 80%;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  position: relative;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+span {
+  font-weight: bold;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: white;
+  padding: 1rem 0;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.menu ul {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.menu a {
+  font-weight: 700;
+  position: relative;
+}
+
+.menu a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  transition: width 500ms ease;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+/* Estilos de tabla */
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  text-align: center;
+  padding: 8px;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+thead {
+  background-color: rgb(239, 239, 239);
+  border-radius: 8px;
+  border: 2px solid black;
+}
+
+/* Sobre Mi */
+
+#sobre-mi {
+  padding: 5rem 2rem 2rem 2rem;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  border-radius: 8px;
+}
+
+#sobre-mi h1 {
+  padding-bottom: 1rem;
+}
+
+#perfil {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  border: 6px solid white;
+  object-fit: cover;
+  border-radius: 50%;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, -50%);
+}
+
+/* Experiencia */
+
+#experiencia {
+  padding: 2rem;
+}
+
+/* Habilidades */
+
+#habilidades-y-conocimientos {
+  padding: 2rem;
+  position: relative;
+}
+
+#habilidades-y-conocimientos::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/assets/png/habilidades-background.png);
+  background-size: cover;
+  z-index: 0;
+  opacity: 0.6;
+  background-attachment: fixed;
+  filter: brightness(2);
+}
+
+#habilidades-y-conocimientos * {
+  position: relative;
+}
+
+#habilidades-y-conocimientos h2 {
+  margin-bottom: 2rem;
+}
+
+#habilidades-y-conocimientos h3 {
+  text-align: center;
+  margin: 1rem 0 1rem 0;
+}
+
+#habilidades-y-conocimientos .group-chips {
+  margin: auto;
+  width: fit-content;
+}
+
+.chip {
+  display: inline-block;
+  margin: 0.2rem;
+  white-space: nowrap;
+  padding: 0 20px;
+  height: 50px;
+  min-width: 130px;
+  font-size: 16px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+}
+
+.chip img {
+  float: left;
+  margin: 5px 10px 0 -5px;
+  height: 40px;
+  width: 40px;
+}
+
+.chip:hover {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Educación */
+
+#educacion {
+  padding: 2rem;
+}
+
+#educacion h2 {
+  margin-bottom: 2rem;
+}
+
+/* Redes sociales */
+
+#perfiles {
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+  position: relative;
+}
+
+#perfiles h2 {
+  margin-bottom: 2rem;
+}
+
+#perfiles::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/png/social-background.jpg);
+  background-repeat: repeat;
+  background-size: contain;
+  z-index: 0;
+  opacity: 0.5;
+  background-attachment: fixed;
+  filter: brightness(2);
+}
+
+#perfiles * {
+  position: relative;
+}
+
+.wrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  padding: 0.5rem;
+  background-color: white;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+svg {
+  transition: fill 400ms ease;
+}
+
+.wrapper:hover #twitter {
+  fill: #1da1f2;
+}
+
+.wrapper:hover #github {
+  fill: #0d2636;
+}
+
+.wrapper:hover #linkedin {
+  fill: #0a66c2;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+}
+
+/* Contacto */
+
+#contactar {
+  padding: 2rem;
+  width: 70%;
+  margin: auto;
+}
+
+#contactar h2 {
+  margin-bottom: 2rem;
+}
+
+#contactar form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 2rem 4rem;
+  border-radius: 8px;
+}
+
+#contactar label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+#contactar input,
+textarea,
+select {
+  padding: 0.3rem 0.5rem;
+  border-radius: 1rem;
+}
+
+#contactar button {
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 2rem;
+  color: white;
+  border: none;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+  background: linear-gradient(
+    90deg,
+    rgba(35, 199, 203, 1) 0%,
+    rgba(96, 86, 230, 1) 100%
+  );
+}
+
+#contactar textarea {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 3rem;
+  max-height: 30rem;
+}
